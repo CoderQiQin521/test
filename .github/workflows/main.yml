@@ -28,6 +28,6 @@ jobs:
                   SSH_PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
                   ARGS: '-avzr --delete'
                   SOURCE: '/'
-                  REMOTE_HOST: '112.74.94.2'
+                  REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
                   REMOTE_USER: 'root'
                   TARGET: '/www/wwwroot/test.com'
