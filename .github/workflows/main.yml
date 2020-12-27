@@ -22,9 +22,8 @@ jobs:
         steps:
             # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
             - name: check
-            uses: actions/checkout@v2
+              uses: actions/checkout@v2
 
             # 上传阿里云
             - name: ssh deploy
-            uses: easingthemes/ssh-deploy@v2.1.5
-                
+              uses: easingthemes/ssh-deploy@v2.1.5
